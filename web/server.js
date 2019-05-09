@@ -8,7 +8,6 @@ import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import _ from 'lodash';
 import config from './webpack.config';
-
 /* eslint-disable no-console */
 
 const port = process.env.PORT || 5000;
@@ -32,7 +31,7 @@ app.get('/home', (req, res) => {
 
 app.listen(port);
 
-console.log('************************************');
-console.log('Apllication is Running :)');
-console.log('Server running on port:', port);
-console.log('************************************');
+console.log(chalk.green('************************************'));
+console.log(chalk.green('Apllication is Running :)'));
+console.log(chalk.green('Server running on port:', port));
+console.log(chalk.green('************************************'));
